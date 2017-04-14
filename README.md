@@ -8,4 +8,4 @@ Coding conventions &amp; Guidelines
 * [References](./Src/Guidelines/0100_References.md)
 
 
-This documentation is highly benefitted from Dennis Doomen's project [dennisdoomen/CSharpGuidelines][https://github.com/dennisdoomen/CSharpGuidelines]
+This documentation is highly benefitted from Dennis Doomen's project [dennisdoomen/CSharpGuidelines](https://github.com/dennisdoomen/CSharpGuidelines)
