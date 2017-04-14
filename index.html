@@ -1,0 +1,18 @@
+---
+title: Coding Guidelines
+subtitle: for C# 3.0, 4.0 and 5.0
+author: Dennis Doomen
+layout: guidlines
+---
+
+<!-- I tried looping over a list of the file names, but for reasons I don't understand that caused it to render differently -->
+
+
+{% capture my_include %}{% include Src/Guidelines/0001_Naming.md %}{% endcapture %}
+{{ my_include | markdownify }}
+{% capture my_include %}{% include Src/Guidelines/0002_Formatting.md %}{% endcapture %}
+{{ my_include | markdownify }}
+{% capture my_include %}{% include Src/Guidelines/0099_Terminology.md %}{% endcapture %}
+{{ my_include | markdownify }}
+{% capture my_include %}{% include Src/Guidelines/0100_References.md %}{% endcapture %}
+{{ my_include | markdownify }}
