@@ -7,6 +7,14 @@ You might already be working on someone elses code so plase start correct bad na
 Most important you might be helping future yourself who will be reading five years old code you have written.
 
 
+<div align="center" class="imgDiv">
+    <img src="images\joke.jpg" width="400px">
+</div>
+
+<div style="page-break-after: always;"></div>
+
+
+
 ### Language Perspective
 
 Code is read so names should not be disconnected from the language
@@ -22,11 +30,12 @@ Code is read so names should not be disconnected from the language
     MetaData -> Metadata
     SurName -> Surname
 ```
+<div style="page-break-after: always;"></div>
 
 ### Character Limitations
 
 
-- Identifiers should contain only alphabetic characters. [SA4491](#Rules)
+- Identifiers should contain only alphabetic characters.
 - **Don’t** use non-English characters. (Ex: Turkish Ş, Ç, Ü, Ğ, Ö, ş, ç, ü, ğ, ö, ı etc.)
 - **Don’t** use _underscore or any special chars (*)
 - **Don’t** use numbers within identifier name (**), (***)
@@ -47,10 +56,12 @@ public string conditionsé
 
 (***) In a sorting routine that accepts two elements; in that case, “value1” and “value2” are appropriate
 
+<div style="page-break-after: always;"></div>
+
 ### Structural Perspective
 
 - Avoid using short names as much as possible
-- **Don’t** use Hungarian Notation
+- **Don’t** use Hungarian Notation  
 - **Don’t** use prefixes to group anything
 - **Don’t** use `List`, `Array` as suffix within identifier. Instead use plurals.
 - **Don’t** use C\# reserved words as identifier
@@ -59,20 +70,20 @@ public string conditionsé
 - Try to append computational qualifiers to variable names like Average, Count, Sum, Min, and Max where appropriate.
 
 
-```cs
-string strName;
-string strSurname;
+    ```cs
+    string strName;
+    string strSurname;
 
-List<int> numberList;
-in[] scoreArray;
+    List<int> numberList;
+    in[] scoreArray;
 
-class BookClass(...)
-enum StatusEnum(...)
+    class BookClass(...)
+    enum StatusEnum(...)
 
-class Customer(...)
-class CustomeR(...)
-```
-
+    class Customer(...)
+    class CustomeR(...)
+    ```
+<div style="page-break-after: always;"></div>
 
 ### Environmental Perspective
 
@@ -80,9 +91,9 @@ class CustomeR(...)
 -   Keep .NET framework naming traditions if you are creating similar concept. For example if you create a class behaving like a **List** try to provide similar members Add, Remove etc. Not AddItem, RemoveItem.
 -   **Don’t** include terms Utility, Helper in classes. These are tend to be static classes and they usually added without considering OOP principles
 
+<div style="page-break-after: always;"></div>
 
 ### Capitalization Summary
-
 
 <table class="tg">
     <tr>
@@ -105,8 +116,7 @@ class CustomeR(...)
     <td class="tg-yw4l">x</td>
     <td class="tg-yw4l">Not Applicable</td>
     </tr>
-</table>    
-
+</table> 
 <table class="tg">
   <tr>
     <th class="tg-yw4l">Identifier</th>
@@ -277,7 +287,7 @@ class CustomeR(...)
     <td class="tg-yw4l"></td>
   </tr>
 </table>
-
+<div style="page-break-after: always;"></div>
 
 ## Naming Guidelines
 
@@ -290,8 +300,8 @@ Following are naming advices for specific elements.
 
 ### Source File
 
-- Avoid having multiple namespace per file.
-- Each source file should contain one public class. (Nested class may be accepted)
+- Avoid having multiple namespace per file. <span id="SA1403_" class="spanny">[[SA1403](#maintainability-rules)]</span>
+- Each source file should contain one public class. (Nested class may be accepted) <span id="SA1402_" class="spanny">[[SA1402](#maintainability-rules)]</span>
 - Class name should be same with source file name.
 
 ### Namespace
@@ -303,14 +313,14 @@ Following are naming advices for specific elements.
 ### Class, Structure
 
 - If a class implements a single interface, it should reflect this by incorporating the interface name into its.
-- Try to add an appropriate suffix if possibl. When sub-classing well known types such as Dictionary, List etc.
+- Try to add an appropriate suffix if possible. When sub-classing well known types such as `Dictionary`, `List` etc.
 - **Don’t** name an element with the same identifier as its containing element
 - Attribute classes should be named with **`Attribute`** suffix. (RULE YAZILACAK)
 - Exception classes should be named with **`Exception`** suffix (RULE YAZILACAK)
 
 ### Interface
 
-- Prefix interfaces with the letter “I”.
+- Prefix interfaces with the letter **“I”**. <span id="SA1302_" class="spanny">[[SA1302](#naming-rules)]</span>
 
 ### Enumeration
 
@@ -318,6 +328,7 @@ Following are naming advices for specific elements.
 - Use plural name for bit fields.
 - Don’t prefix (or suffix) enum type or enum values
 
+<div style="page-break-after: always;"></div>
 
 ### Method
 
@@ -330,6 +341,7 @@ Following are naming advices for specific elements.
 - Extension Methods should be put in a class with Extensions suffix.
 - Methods with return values should have a name describing the value returned.
 
+<div style="page-break-after: always;"></div>
 
 ### Property
 
@@ -359,18 +371,24 @@ Same as Field
 
 Same as Field
 
+<div style="page-break-after: always;"></div>
+
 ### Variables
 
-- Parameter names should be named with camel-case without prefix
-- Names need only be as specific as scope requires.
+- Parameter names should be named with camel-case without prefix <span id="SA1308_" class="spanny">[[SA1308](#naming-rules)]</span>
+- Names need only be as specific as scope requires. <span id="SA1312_" class="spanny">[[SA1312](#naming-rules)]</span>
 - Since scope is very limited more abbreviation is allowed
 - Avoid using single characters for the loops. Try to extend index names with an appropriate suffix. ( For ex. colIndex, customerIndex)
 - Avoid enumeration variable names like number1, number2
 
+<div align="center" class="imgDiv">
+<img src="images\variable_names.jpg" width="400px">
+</div>
+<div style="page-break-after: always;"></div>
 
 ### Parameters
 
-- Parameter names should be camel-case
+- Parameter names should be camel-case <span id="SA1313_" class="spanny">[[SA1313](#naming-rules)]</span>
 - Prefer whole words instead of abbreviation. (Ex: idx -> index , trnx -> transaction)
 - Don’t repeat type within parameter name. (E.g. a parameter of type IDataContext should be\ called context instead of dataContext ) *(6)*
 - Keep parameter name short without losing meaning
@@ -401,7 +419,7 @@ Same as Field
 
 - If there is only one generic parameters use **`T`**
 - If there are two parameters with relation like key – value name **`K, V`**
-- If there are multiple parameters give something special starting with **`T`**
+- If there are multiple parameters give something special starting with **`T`** <span id="SA1314_" class="spanny">[[SA1314](#naming-rules)]</span>
 
 ### Lambda Expressions
 

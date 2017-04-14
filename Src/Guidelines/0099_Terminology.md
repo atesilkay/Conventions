@@ -2,8 +2,8 @@
 
 <table class="tg">
   <tr>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l">Term</th>
+    <th class="tg-yw4l">Description</th>
   </tr>
   <tr>
     <td class="tg-9hbo">Member</td>

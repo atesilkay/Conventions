@@ -37,5 +37,6 @@
 [Fields (C# Programming Guide)](https://msdn.microsoft.com/en-us/library/ms173118.aspx)
 
 #### Analyzers
+
 [StyleCop Analyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/tree/master/documentation)
 

@@ -27,6 +27,8 @@ Members of the same type should be ordered as below
     4. protected
     5. private
 
+For ordering these rules may be applied <span class="spanny">[[SA1200 - SA1217](#ordering-rules)]</span>
+<div style="page-break-after: always;"></div>
 
 ## Namespaces
 
@@ -34,338 +36,442 @@ Members of the same type should be ordered as below
 - Never put using statement within namespace scope.
 - It is a good practice to group namespaces according to company or logical groups.
 
+<div style="page-break-after: always;"></div>
+
 ## Indentation
 
-- Don’t use tabs for indentation. Check if your VS IDE set properly
+- Don’t use tabs for indentation. Check if your VS IDE set properly <span id="SA1027_" class="spanny">[[SA1027](#spacing-rules)]</span>
 - Recursively indent all code blocks contained within braces
 - Don’t indent object initializers.
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    var customer = new Customer()
+                    {
+                        Age = 1,
+                        Name = "Barış",
+                        Surname = "Akan"
+                    };
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    var customer = new Customer()
+    {
+        Age = 1,
+        Name = "Barış",
+        Surname = "Akan"
+    };
+    ```
+
 - Don’t indent lambda expressions. Treat as object initializers.
+
+<div style="page-break-after: always;"></div>
 
 ## Line Breaking
 
-- If there is a long line break it up from:
-  - after comma
+- If there is a long line break it up from:  
+  - after comma  <span id="SA1113_" class="spanny">[[SA1113](#readability-rules)]</span>
   - after operator
+  
 
 - When breaking be careful about readability. Bad example would be seen like this:
 
+    <span class="spannyfalse">BAD</span>
     ```cs
     var = a * b / (c - g +
     f) + 4 * z;
     ```
 
-
+<div style="page-break-after: always;"></div>
 
 ## Spacing
 
-- Keywords must follow with space
+- Keywords must follow with space <span id="SA1000_" class="spanny">[[SA1000](#spacing-rules)]</span>
 
-    ```cs
-    //FALSE
-    
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     if(true != false)
     {
         //do something
     }
-    
-    //CORRECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     if (true != false)
     {
         //do something
     }
     ```
 
+- Use single space after comma. For example between method parameters. <span id="SA1001_" class="spanny">[[SA1001](#spacing-rules)]</span>
 
-- Use single space after comma. For example between method parameters.
-
-    ```cs
-    //FALSE
-    
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public void Spacing(string name,string surname)
     {
     }
-    
-    //CORRECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     public void Spacing(string name, string surname)
     {
     }
-    ```
+    ```   
 
-- There is no space before or after parenthesis **()**
-    ```cs
-    //FALSE
+- There is no space before or after parenthesis **()** <span id="SA1008_9_" class="spanny">[[SA1008 - SA1009](#spacing-rules)]</span>
+    
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     if ( ( true != false ) &  ( false == true ) )
     {
         //do something
     }
-    
-    //CORRECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     if ((true != false) & (false == true))
     {
         //do something
     }
-    ```
+    ```   
 
-- There is no space before or after bracket **\[\]**
-    ```cs
-    //FALSE
-    Int [ 10 ]  integers = new int [ 10 ] ;
+- There is no space before or after bracket **\[\]**  <span id="SA1010_11_" class="spanny">[[SA1010 - SA1011](#spacing-rules)]</span>
     
-    //CORECT
-    int[10] integers = new int[10];
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    Int [ 10 ]  integers = new int [ 10 ] ;
     ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    int[10] integers = new int[10];
+    ```   
 
-- There is no space before or after for attribute definition brackets **\[Attribute\]**
-    ```cs
-    //FALSE
+- There is no space before or after for attribute definition brackets **\[Attribute\]** <span id="SA1016_17_" class="spanny">[[SA1016 - SA1017](#spacing-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     [ Serializable ]
     public class Customer : ICustomer
     {
     }
-    
-    //CORRECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     [Serializable]
     public class Customer : ICustomer
     {
     }
-    ```
+    ```   
 
-- There is no space before or after for generic brackets **<>**
-
-    ```cs
-    //FALSE
+- There is no space before or after for generic brackets **<>** <span id="SA1014_15_" class="spanny">[[SA1014 - SA1015](#spacing-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     List< int > amounts = new List< int >();
-    
-    //CORRECT
-    List<int> amounts = new List<int>();
     ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    List<int> amounts = new List<int>();
+    ```   
 
-- There is no space before or after for generic brackets **{}**
-    ```cs
-    FALSE
+- There is no space before or after for generic brackets **{}** <span id="SA1012_13_" class="spanny">[[SA1012 - SA1013](#spacing-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public bool EmtyMethod()
     {
         if (true != false) {return true;}
     }
-    
-    CORRECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     public bool EmtyMethod()
     {
         if (true != false) { return true; }
     }
-    ```
+    ```   
 
-
-- Nullable type symbol should not be preceded by space **?**
-    ```cs
-    FALSE
+- Nullable type symbol should not be preceded by space **?** <span id="SA1018_" class="spanny">[[SA1018](#spacing-rules)]</span>
+     <span class="spannyfalse">FALSE</span>
+    ```cs        
     private int ? maximumValue;
     
     public int CalculateMax(int ? currentValue)
     {
                 
     }
-    
-    CORECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     private int? maximumValue;
     
     public int CalculateMax(int? currentValue)
     {
                 
     }
-    ```
-
-- There is no space before or after for member access symbol. **.**
-
-    ```cs
-    FALSE
+    ```  
     
+
+- There is no space before or after for member access symbol. **.** <span id="SA1019_" class="spanny">[[SA1019](#spacing-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     Customer customer = new Customer();
     customer . CalculateMax();
-    
-    CORECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     Customer customer = new Customer();
     customer.CalculateMax();
-    ```
+    ```  
 
-- There is no space before or after for increment decrement symbol. **++ --**
-    ```cs
-    FALSE
+
+- There is no space before or after for increment decrement symbol. **++ --** <span id="SA1020_" class="spanny">[[SA1020](#spacing-rules)]</span>
+     <span class="spannyfalse">FALSE</span>
+    ```cs        
     int yearsToAdd = 1;
     yearsToAdd ++;
     yearsToAdd --;
-    
-    CORECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     int yearsToAdd = 1;
     yearsToAdd++;
     yearsToAdd--;
-    ```
+    ```  
 
-- There is no space before or after for negative positive signs. **+ -**
-    ```cs
-    FALSE
+- There is no space before or after for negative positive signs. **+ -** <span id="SA1021_22_" class="spanny">[[SA1021 - SA1022](#spacing-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     int maxTotal = - 500;
     int minTotal = + 500;
-    
-    CORECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     int maxTotal = -500;
     int minTotal = +500;
-    ```
+    ```  
 
-- There is space before or after for negative positive signs. **:**
-    ```cs
-    FALSE
-    
+- There is space before or after for negative positive signs. **:** <span id="SA1024_" class="spanny">[[SA1024](#spacing-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public class Class2<T>:Class1 where T:string
     {
         public Class2(int x):base(x)
         {
         }
     }
-    
-    CORECT
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     public class Class2<T> : Class1 where T : string
     {
         public Class2(int x) : base(x)
         {
         }
     }
-    ```
+    ```      
 
-- There should not be meaningless multiple spaces within or end of the line.
-- Semicolons don’t preceded with space
-- Infix notations : There is single space surrounding operator
-    ```cs
-    FALSE
-    
+- There should not be meaningless multiple spaces within or end of the line. <span id="SA1025_28_" class="spanny">[[SA1025 - SA1028](#spacing-rules)]</span>
+- Semicolons don’t preceded with space <span id="SA1002_" class="spanny">[[SA1002](#spacing-rules)]</span>
+- Infix notations : There is single space surrounding operator <span id="SA1003_" class="spanny">[[SA1003](#spacing-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     int yearsToAdd=1;
     yearsToAdd=3+5;
     yearsToAdd=5*5;
     
     bool why=! false;
-    
-    CORECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     int yearsToAdd = 1;
     yearsToAdd = 3 + 5;
     yearsToAdd = 5 * 5;
     
     bool why = !false;
-    ```
+    ```      
 
-- Postfix notations there is no space between operator and argument.
 
+- Postfix notations there is no space between operator and argument. <span id="SA1003_" class="spanny">[[SA1003](#spacing-rules)]</span>
+
+<div style="page-break-after: always;"></div>
 
 ## Brackets / Braces
 
 Allman style will be applied for all the brackets.
 
-- Curly brackets go on their own line in most cases.
-    ```cs
-    FALSE
-    
+- Curly brackets go on their own line in most cases. <span id="SA1500_" class="spanny">[[SA1500](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public string GetName(){
     
     //implementation            
     }
-    
-    CORECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     public string GetName()
     {
     
     //implementation            
     }
-    ```
+    ```      
 
-
-- According to the first rule statements should not be on a single line.
-    ```cs
-    FALSE
-    
+- According to the first rule statements should not be on a single line. <span id="SA1501_" class="spanny">[[SA1501](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     if (canHold) { var k = 255; }
-    
-    CORECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     if (canHold)
     {
         var k = 255;
     }
-    ```
+    ```          
+<div style="page-break-after: always;"></div>
 
 ### Properties
 
 - Abstract properties goes into a single line with brackets
-
-    ```cs
-    FALSE
-    
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public abstract int Age
     {
         get; set;
     }
-    
-    CORRECT
-    
-    public abstract int Age { get; set; }
     ```
- 
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    public abstract int Age { get; set; }
+    ```       
 
 - Simple getters and setters should go on the same line
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    public int Age
+    {
+        get; set;
+    }
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    public int Age { get; set; }
+    ```       
 - When getter or setter gets complex common rule applies. Brackets goes to their own lines.
-- Getter or setter both written multiline or single line.
+    
+- Getter or setter both written multiline or single line. <span id="SA1504_" class="spanny">[[SA1504](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    public bool Enabled
+    {
+        get { return this.enabled; }
+
+        set
+        {
+            this.enabled = value;
+        }
+    }
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    public bool Enabled
+    {
+        get { return this.enabled; }
+        set { this.enabled = value; }
+    }
+    //OR
+    public bool Enabled
+    {
+        get
+        {
+            return this.enabled;
+        }
+
+        set
+        {
+            this.enabled = value;
+        }
+    }
+    ```      
+
 
 ### Methods
 
-- All method declaration brackets should go their own lines. This actually applies to all elements using brackets.
-
-    ```cs
-    FALSE
-    
+- All method declaration brackets should go their own lines. This actually applies to all elements using brackets. <span id="SA1502_" class="spanny">[[SA1502](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public int GetAge() { return Age; }
-    
-    CORECT
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     public int GetAge()
     {
         return Age;
     }
-    ```
+    ```      
 
 - Event empty methods braces should be in separate lines
 
-### Conditional statements
+- Parameter list must follow decleration  <span id="SA1114_" class="spanny">[[SA1114](#readability-rules)]</span>
 
-- Always use braces for conditional statements
-
-    ```cs
-    FALSE
-    
-    if (true)
-        return false;
-    
-    CORECT
-    
-    if (true)
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    public string JoinName(
+ 
+        string first, string last)
     {
-        return false;
     }
     ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    public string JoinName(string first, string last)
+    {
+    }
+    ```  
+- If you break parameters into multiple lines line  <span id="SA1115_17_" class="spanny">[[SA1115 - SA1116 - SA1117](#readability-rules)]</span>
+    
+    * parameters can be on a single line
+    * parameters can be on multiple lines "each following with a comma"
 
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    public string JoinName(string first
+        ,string last)
+    {
+    }
+
+    //OR
+
+    public string JoinName(
+        string first
+        ,string last)
+    {
+    }
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    public string JoinName(string first, string last)
+    {
+    }
+    
+    //OR
+
+    public string JoinName(,
+        string first,
+        string last)
+    {
+    }
+    ```  
 
 ## Empty Lines
 
 
-Empty/blank lines are helping to improve readability of the document.
+Empty/blank lines are helping to improve readability of the document. 
 
-- Elements should be separated by single black line.
-
-    ```cs
-    FALSE
-    
+- Elements should be separated by single black line. <span id="SA1516_" class="spanny">[[SA1516](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public void Method1()
     {
     }
@@ -375,27 +481,26 @@ Empty/blank lines are helping to improve readability of the document.
     }
     ```
 
-- Multiple blank lines are not allowed.
-    ```cs
-    FALSE
-    
+- Multiple blank lines are not allowed. <span id="SA1507_" class="spanny">[[SA1507](#layout-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public bool Enabled
     {
         get
         {
             Console.WriteLine("Getting the enabled flag.");
     
+
     
             return this.enabled;
         }
     }
     ```
 
-- Opening or closing brackets never preceded by blank line
-
-    ```cs
-    FALSE
-    
+- Opening or closing brackets never preceded by blank line <span id="SA1508_09_" class="spanny">[[SA1508 - SA1509](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public bool Enabled
     
     {
@@ -407,12 +512,10 @@ Empty/blank lines are helping to improve readability of the document.
     }
     ```
 
-- Opening or closing brackets never followed by blank line
-
-    ```cs
+- Opening or closing brackets never followed by blank line <span id="SA1505_" class="spanny">[[SA1505](#layout-rules)]</span>
     
-    FALSE
-    
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public bool Enabled
     {
     
@@ -422,28 +525,24 @@ Empty/blank lines are helping to improve readability of the document.
             return this.enabled;
         }
     }
-    
     ```
+- Source file should not contain blank lines at the beginning or at the end. <span id="SA1517_18_" class="spanny">[[SA1517 - SA1518](#layout-rules)]</span>
 
-- Closing brackets followed by blank line
-
-    ```cs
-    
-    FALSE
-    
+### Statements
+- Closing brackets followed by blank line <span id="SA1513_" class="spanny">[[SA1513](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     public bool Enabled
     {
         get
         {
             return this.enabled;
         }}
-        
     ```
 
-- Chained blocks such as try/catch and if-else should not be separated by blank line
-    ```cs
-    FALSE
-    
+- Chained blocks such as try/catch and if-else should not be separated by blank line <span id="SA1510_" class="spanny">[[SA1510](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     try
     {
         this.SomeMethod();
@@ -455,35 +554,156 @@ Empty/blank lines are helping to improve readability of the document.
     }
     ```
 
-- Do – while block should not be separated by blank line
-    ```cs
-    FALSE
-    
+- Do – while block should not be separated by blank line <span id="SA1511_" class="spanny">[[SA1511](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
     do
     {
         Console.WriteLine("Loop forever");
     }
     
     while (true);
-    ```
+    ``` 
 
-
-- Source file should not contain blank lines at the beginning or at the end.
+<div style="page-break-after: always;"></div>
 
 ## Parenthesis
 
-- Try to avoid unnecessary parenthesis![]
+- Try to avoid unnecessary parenthesis![] <span id="SA1119_" class="spanny">[[SA1119](#layout-rules)]</span>
 
+- Openning parenthesis of method calls should follow declaration.  <span id="SA1110_" class="spanny">[[SA1110](#readability-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    return CalculatePoint
+        (10,20);
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    return CalculatePoint(10,20);
+    ```    
+
+- Closing parenthesis should follow last parameter.  <span id="SA1111_" class="spanny">[[SA1111](#readability-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    return CalculatePoint(10,20
+    );
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    return CalculatePoint(10,20);
+    ```    
+- If there are no parameters openning and closing parenthesis shuld be on the same line.  <span id="SA1112_" class="spanny">[[SA1112](#readability-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    var x = this.CalculatePoint(
+                                );
+    );
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    var x = this.CalculatePoint();
+    ```    
 ## Statements
 
-- Do not put more than one variable or variables of different types on the same line when declaring them.
-
-    ```cs
+- Do not put more than one variable or variables of different types on the same line when declaring them. <span id="SA1132_" class="spanny">[[SA1132](#readability-rules)]</span>
+    <span class="spannyfalse">BAD</span>
+    ```cs        
     int a,b,c;
     string name,surname;
     ```
 
 - Each line should contain only one statement.
+
+- Do not encapsulate statement brackets within regions <span id="SA1109_" class="spanny">[[SA1109](#readability-rules)]</span>
+
+    <span class="spannyfalse">BAD</span>
+    ```cs        
+    if (x != y)
+    #region
+    {
+    }
+    #endregion
+    ```
+- Don't embed comments between block statements <span id="SA1108_" class="spanny">[[SA1108](#readability-rules)]</span>
+
+    <span class="spannyfalse">BAD</span>
+    ```cs        
+    if (x != y)
+    // Make sure x does not equal y
+    {
+    }
+    ```
+
+### Conditional statements
+
+- Always use braces for conditional statements  <span id="SA1503_" class="spanny">[[SA1503](#layout-rules)]</span>
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    if (true)
+        return false;
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    if (true)
+    {
+        return false;
+    }
+    ```      
+
+
+## Class Definitions
+
+- Type declarations of generic class should go their own lines  <span id="SA1127_" class="spanny">[[SA1127](#readability-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    private void Method<T, R>() where T : class where R : class, new()
+    {
+    }
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    private void Method<T, R>()
+        where T : class
+        where R : class, new()
+    {
+    }
+    ```   
+
+- Constructor initializer goes into a seperate line with the colon **:** character <span id="SA1128_" class="spanny">[[SA1128](#readability-rules)]</span>
+
+    <span class="spannyfalse">FALSE</span>
+    ```cs        
+    public class TypeName
+    {
+        public TypeName() : this(0)
+        {
+        }
+
+        public TypeName(int value)
+        {
+        }
+    }
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
+    public class TypeName
+    {
+        public TypeName() 
+            : this(0)
+        {
+        }
+        public TypeName(int value)
+        {
+        }
+    }
+    ```   
+
+
+<div style="page-break-after: always;"></div>
 
 ## Region
 
@@ -496,26 +716,29 @@ Empty/blank lines are helping to improve readability of the document.
 - If there is a nested class put it in a region (AV2407 kuralını incele)
 
 
+<div style="page-break-after: always;"></div>
+
 ## Attributes
 
-- Attributes should be defined separately.
-- If they are related they can be combined together
-
-    ```cs
-    FALSE
-    
+- Attributes should be defined separately.  <span id="SA1133_" class="spanny">[[SA1133](#readability-rules)]</span>
+- If they are related they can be combined together (unless if above rule is enabled)
+    <span class="spannyfalse">BAD</span>
+    ```cs        
     [Attrbute1, Attrbute2, Attrbute3]
     public class MyClass
     {…}
-    
+    ```
+    <span class="spannytrue">TRUE</span>
+    ```cs     
     CORECT
     [Attrbute1, RelatedAttribute2]
     [Attrbute3]
     [Attrbute4]
     public class MyClass
     {…}
-    ```
+    ```      
 
+<div style="page-break-after: always;"></div>
 
 ## Comments
 
@@ -544,7 +767,7 @@ Empty/blank lines are helping to improve readability of the document.
 - Block comments should usually be avoided.
 - Generally block comments are useful for comment out large sections of code.
 - When you wish to use block comments you should use the following style
-
+     
     ```cs
        /* Line 1
         * Line 2
@@ -559,7 +782,7 @@ Empty/blank lines are helping to improve readability of the document.
 - For descriptions use of the `///` comments to give C ♯ standard descriptions is recommended.
 
 - Always add `CDATA` tags to comments containing code and other embedded markup in order to avoid encoding issues.
-
+ 
     ```cs
         /// <example>
         /// Add the following key to the “appSettings” section of your config:

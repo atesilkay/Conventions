@@ -12,6 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
 }
 
+
 /* BODY
 =============================================================================*/
 
@@ -21,8 +22,8 @@ body {
     line-height: 1.6;
     color: #000;
     background-color: #fff;
-    /*padding: 70px;
-    margin: 0 auto;*/
+    padding: 10px;
+    margin: 0 auto;
 }
 
 body>*:first-child {
@@ -262,12 +263,16 @@ hr {
 =============================================================================*/
 
 table th {
-  font-weight: bold;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 13px;
 }
 
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
+table td {
+    border: 1px solid #ccc;
+    font-size: 11px;
+    padding: 6px 13px;
 }
 
 table tr {
@@ -334,8 +339,8 @@ img[alt="logo"]
 
 .tg td {
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    padding: 10px 5px;
+    font-size: 11px;
+    /*padding: 8px 4px;*/
     border-style: solid;
     border-width: 1px;
     overflow: hidden;
@@ -346,7 +351,7 @@ img[alt="logo"]
     font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
-    padding: 10px 5px;
+    /*padding: 10px 5px;*/
     border-style: solid;
     border-width: 1px;
     overflow: hidden;
@@ -354,7 +359,7 @@ img[alt="logo"]
 }
 
 .tg .tg-yw4l {
-    vertical-align: top
+    vertical-align: middle
 }
 
 
@@ -364,4 +369,24 @@ table,pre {
 
 h2 {
     page-break-before: auto;
+}
+
+.spanny {
+    color: #4183C4;
+    font-weight:bold;
+}
+
+.spannyfalse {
+    color: red;
+    font-weight: bold;
+}
+
+.spannytrue {
+    color: green;
+    font-weight: bold;
+}
+.imgDiv {
+    width:100%;
+    align-content:center;
+    align-self:center;
 }

@@ -1,3 +1,5 @@
 /Artifacts
 /.vs/ProjectSettings.json
 /.vs/slnx.sqlite
+/.vs/Conventions/v15/*.suo
+/.vs/config/applicationhost.config
