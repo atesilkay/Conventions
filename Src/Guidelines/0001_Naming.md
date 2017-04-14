@@ -41,7 +41,7 @@ public double amount1;
 public string conditionsé 
 ```
     
-(*)The ***underscore*** is allowed only as a leading character for fields if they are ***private***.
+(*)The ***underscore*** is allowed only as a leading character for fields if they are ***`private`***.
 
 (**) Numbers allowed only for local variables and method parameters and only appear as a suffix.
 
@@ -52,10 +52,10 @@ public string conditionsé
 - Avoid using short names as much as possible
 - **Don’t** use Hungarian Notation
 - **Don’t** use prefixes to group anything
-- **Don’t** use List, Array as suffix within identifier. Instead use plurals.
+- **Don’t** use `List`, `Array` as suffix within identifier. Instead use plurals.
 - **Don’t** use C\# reserved words as identifier
 - **Don’t** multiply anything (namespace, class etc.) with just changing capitalization.
-- **Don’t** use types within identifiers such as Enum, Class etc.
+- **Don’t** use types within identifiers such as `Enum`, `Class` etc.
 - Try to append computational qualifiers to variable names like Average, Count, Sum, Min, and Max where appropriate.
 
 
@@ -305,8 +305,8 @@ Following are naming advices for specific elements.
 - If a class implements a single interface, it should reflect this by incorporating the interface name into its.
 - Try to add an appropriate suffix if possibl. When sub-classing well known types such as Dictionary, List etc.
 - **Don’t** name an element with the same identifier as its containing element
-- Attribute classes should be named with **Attribute** suffix. (RULE YAZILACAK)
-- Exception classes should be named with **Exception** suffix (RULE YAZILACAK)
+- Attribute classes should be named with **`Attribute`** suffix. (RULE YAZILACAK)
+- Exception classes should be named with **`Exception`** suffix (RULE YAZILACAK)
 
 ### Interface
 
@@ -399,9 +399,9 @@ Same as Field
 
 ### Generic Parameters
 
-- If there is only one generic parameters use **T**
-- If there are two parameters with relation like key – value name **K,V**
-- If there are multiple parameters give something special starting with **T**
+- If there is only one generic parameters use **`T`**
+- If there are two parameters with relation like key – value name **`K, V`**
+- If there are multiple parameters give something special starting with **`T`**
 
 ### Lambda Expressions
 
@@ -417,11 +417,12 @@ Same as Field
 ### Acronyms and Abbrevations 
 
 - Prefer whole words or predefined short forms and abbrevations.
-- Try not to abbrevate words. ( Instead of **public** int num**;** use    **public** int number**;**)
+- Try not to abbrevate words. ( Instead of **`public int num;`** use    **`public int number;`**)
 - Any abbrevations should be well known among team members.
 - Avoid using single character names i , l , t. ( Use index, temp, length. )
 - Avoid abbrevations longer than **5** characters
 - Should be Pascal Case (7), (8)
 
-*(7) If it is two letters it should be used UPPERCASE**
+*(7) If it is two letters it should be used UPPERCASE*
+
 *(8) If it is at the beginning to camel-case identifier, it is always small*
