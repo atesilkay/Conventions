@@ -1,6 +1,11 @@
 # Conventions
 Coding conventions &amp; Guidelines
 
-[Naming](./src/Guidelines/0001_Naming.md)
 
-[Naming][./src/Guidelines/0001_Naming.md]
+* [Naming](./Src/Guidelines/0001_Naming.md)
+* [Formatting](./Src/Guidelines/0002_Formatting.md)
+* [Terminology](./Src/Guidelines/0099_Terminology.md)
+* [References](./Src/Guidelines/0100_References.md)
+
+
+This documentation is highly benefitted from Dennis Doomen's project [dennisdoomen/CSharpGuidelines][https://github.com/dennisdoomen/CSharpGuidelines]
