@@ -10,3 +10,21 @@ Coding conventions &amp; Guidelines
 
 
 This documentation is highly benefitted from Dennis Doomen's project [dennisdoomen/CSharpGuidelines](https://github.com/dennisdoomen/CSharpGuidelines)
+
+
+
+<div markdown="1">
+<table>
+<tr>
+<td>asdfaadfljkasfd</td>
+<td>
+```cs
+    if (x != y)
+    // Make sure x does not equal y
+    {
+    }
+```
+</td>
+</tr>
+</table>
+</div>
