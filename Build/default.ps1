@@ -35,7 +35,7 @@ task Compile {
 		New-Item -ItemType Directory -Force -Path "$ArtifactsDirectory\Guidelines"
 	}
 
-	$outfile = "$ArtifactsDirectory\Guidelines\CSharpCodingGuidelines.md"
+	$outfile = "$ArtifactsDirectory\Guidelines\FintekCodingGuidelines.md"
 		
 	$files | %{
 		Write-Host "Including " $_.FullName
@@ -56,8 +56,8 @@ task BuildHtml {
 	{
 		Set-Location "$ArtifactsDirectory\Guidelines"
 
-		$outfile = "$ArtifactsDirectory\CSharpCodingGuidelines.html"
-		$outfilePdf = "$ArtifactsDirectory\CSharpCodingGuidelines.pdf"
+		$outfile = "$ArtifactsDirectory\FintekCodingGuidelines.html"
+		$outfilePdf = "$ArtifactsDirectory\FintekCodingGuidelines.pdf"
 		
 		if (Test-Path $outfile) {
 			Remove-Item $outfile
@@ -67,8 +67,8 @@ task BuildHtml {
 			Remove-Item $outfilePdf
 		}
 
-		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks CSharpCodingGuidelines.md -o $outfile --self-contained 
-		& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8"
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks+pandoc_title_block FintekCodingGuidelines.md -o $outfile --self-contained
+		& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8" 
 
 	}
 	finally

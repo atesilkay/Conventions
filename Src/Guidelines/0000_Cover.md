@@ -2,14 +2,11 @@
 <br/>
 
 <div class="title">
-Fintek Coding Guidelines
+Coding Guidelines
 </div>
 <br/>
 
 <div class="subTitle">
 </div>
 <br/>
-
-<div class="author">
-Tahsin Baris Akan<br/>
-</div>
+<div style="page-break-after: always;"></div>

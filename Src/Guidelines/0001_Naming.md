@@ -92,196 +92,196 @@ public string conditionsé
 ### Capitalization Summary
 
 <table class="tg">
-    <tr>
-    <th class="tg-yw4l">Term</th>
-    <th class="tg-yw4l">Meaning</th>
-    </tr>
-    <tr>
-    <td class="tg-yw4l">c</td>
-    <td class="tg-yw4l">camelCase</td>
-    </tr>
-    <tr>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">PascalCase</td>
-    </tr>
-    <tr>
-    <td class="tg-yw4l">_</td>
-    <td class="tg-yw4l">Prefix with underscore</td>
-    </tr>
-    <tr>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">Not Applicable</td>
-    </tr>
+<tr>
+<th class="tg-yw4l">Term</th>
+<th class="tg-yw4l">Meaning</th>
+</tr>
+<tr>
+<td class="tg-yw4l">c</td>
+<td class="tg-yw4l">camelCase</td>
+</tr>
+<tr>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">PascalCase</td>
+</tr>
+<tr>
+<td class="tg-yw4l">_</td>
+<td class="tg-yw4l">Prefix with underscore</td>
+</tr>
+<tr>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">Not Applicable</td>
+</tr>
 </table> 
 <table class="tg">
-  <tr>
-    <th class="tg-yw4l">Identifier</th>
-    <th class="tg-yw4l">Public</th>
-    <th class="tg-yw4l">Protected</th>
-    <th class="tg-yw4l">Internal</th>
-    <th class="tg-yw4l">Private</th>
-    <th class="tg-yw4l">Naming Structure</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Project File</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Source File</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Class, Structure</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Namespace</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Enumeration</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Method</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Verb or Verb phrase</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Property</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun or Adjective</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Field</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">_c</td>
-    <td class="tg-yw4l">Noun or Adjective.</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Static Field</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">_c</td>
-    <td class="tg-yw4l">Noun or Adjective.</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Event</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Verb or Verb phrase</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Delegate</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Interface</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Generic Class</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Constant</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">_c</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Inline Variables</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">c</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Parameter</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">x</td>
-    <td class="tg-yw4l">c</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Generic Type Parameter</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Resource</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">Noun</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Attribute Class</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">PAttribute</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Exception Class</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">PException</td>
-    <td class="tg-yw4l"></td>
-  </tr>
+<tr>
+<th class="tg-yw4l">Identifier</th>
+<th class="tg-yw4l">Public</th>
+<th class="tg-yw4l">Protected</th>
+<th class="tg-yw4l">Internal</th>
+<th class="tg-yw4l">Private</th>
+<th class="tg-yw4l">Naming Structure</th>
+</tr>
+<tr>
+<td class="tg-yw4l">Project File</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l"></td>
+</tr>
+<tr>
+<td class="tg-yw4l">Source File</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l"></td>
+</tr>
+<tr>
+<td class="tg-yw4l">Class, Structure</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Namespace</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Enumeration</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Method</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Verb or Verb phrase</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Property</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun or Adjective</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Field</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">_c</td>
+<td class="tg-yw4l">Noun or Adjective.</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Static Field</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">_c</td>
+<td class="tg-yw4l">Noun or Adjective.</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Event</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Verb or Verb phrase</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Delegate</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l"></td>
+</tr>
+<tr>
+<td class="tg-yw4l">Interface</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Generic Class</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Constant</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">_c</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Inline Variables</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">c</td>
+<td class="tg-yw4l"></td>
+</tr>
+<tr>
+<td class="tg-yw4l">Parameter</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">x</td>
+<td class="tg-yw4l">c</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Generic Type Parameter</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Resource</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">Noun</td>
+</tr>
+<tr>
+<td class="tg-yw4l">Attribute Class</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">PAttribute</td>
+<td class="tg-yw4l"></td>
+</tr>
+<tr>
+<td class="tg-yw4l">Exception Class</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">P</td>
+<td class="tg-yw4l">PException</td>
+<td class="tg-yw4l"></td>
+</tr>
 </table>
 <div style="page-break-after: always;"></div>
 

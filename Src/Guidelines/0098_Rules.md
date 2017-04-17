@@ -40,7 +40,6 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 | SA1026     |                              | CodeMustNotContainSpaceAfterNew KeywordInImplicitlyTypedArrayAllocation |
 | SA1027     | [YES](#SA1027_)             | UseTabsCorrectly                                                        |
 | SA1028     | [YES](#SA1025_28_)          | CodeMustNotContainTrailingWhitespace                                    |
-
 <div style="page-break-after: always;"></div>
 
 ### Ordering Rules

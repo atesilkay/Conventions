@@ -263,20 +263,20 @@ hr {
 =============================================================================*/
 
 table th {
-    border: 1px solid #ccc;
-    font-size: 14px;
+    border: 0px solid #ccc;
+    font-size: 13px;
     font-weight: bold;
-    padding: 6px 13px;
+    padding: 2px 0px;
 }
 
 table td {
-    border: 1px solid #ccc;
-    font-size: 11px;
-    padding: 6px 13px;
+    border: 0px solid #ccc;
+    font-size: 13px;
+    padding: 2px 0px;
 }
 
 table tr {
-  border-top: 1px solid #ccc;
+  border-top: 0px solid #ccc;
   background-color: #fff;
 }
 
@@ -371,6 +371,11 @@ h2 {
     page-break-before: auto;
 }
 
+
+h5, h6 {    
+    page-break-inside: avoid;
+}
+
 .spanny {
     color: #4183C4;
     font-weight:bold;
@@ -379,14 +384,111 @@ h2 {
 .spannyfalse {
     color: red;
     font-weight: bold;
+    width: 100%;
+    font-family: Variable Bold, Calibri, Arial;
 }
 
 .spannytrue {
     color: green;
     font-weight: bold;
+    width: 100%;
 }
 .imgDiv {
+    width: 100%;
+    align-content: center;
+    align-self: center;
+    font-family: Variable Bold, Calibri, Arial;
+}
+
+/*.cstable {
+    border: 0px solid black;
+    width: 70%;
+    padding: 0px 0px 0px 0px;
+}
+.cstr{
+    border: 0px hidden white;
+    background-color: white;
+}
+.cstr:nth-child(2n) {
+    border: 0px hidden white;
+    background-color: white;
+}
+.cstable tbody 
+{
+    border: 0px solid black;
+    padding: 0px 0px 0px 0px;
+}
+.cstable th {
+    border: 0px solid black;
+    padding: 0px 0px 0px 0px;
+}
+.cstd {
+    border: 0px solid black;
+    padding: 0px 0px 0px 0px;
     width:100%;
-    align-content:center;
-    align-self:center;
+}
+
+.cstdflag 
+{
+        border: 0px solid black;
+        padding: 0px 0px 0px 0px;
+        width:20px;
+        vertical-align:top;
+}*/
+
+
+/* DivTable.com */
+.divTable {
+    display: table;
+    width: 100%;
+    page-break-inside: avoid;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 1px 3px;
+}
+.divTableCellF{
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 1px 3px;
+    width:50px;
+}
+
+.divTableCellO {    
+    /*border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;*/
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    align-content: center;
+}
+
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.divTableFoot {
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold;
+}
+
+.divTableBody {
+    display: table-row-group;
 }
