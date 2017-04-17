@@ -749,8 +749,6 @@ Empty/blank lines are helping to improve readability of the document.
 - If you are commenting more than the written code most probably there is something wrong. That code is potentially buggy or too complicated and should be worked on.
 
 
-![](images/quote-code-never-lies-comments-sometimes-do-ron-jeffries-87-86-54.jpg)
-
 
 ### Single Line Comments
 

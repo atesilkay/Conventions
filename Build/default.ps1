@@ -67,7 +67,7 @@ task BuildHtml {
 			Remove-Item $outfilePdf
 		}
 
-		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_github+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks CSharpCodingGuidelines.md -o $outfile --self-contained 
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks CSharpCodingGuidelines.md -o $outfile --self-contained 
 		& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8"
 
 	}

@@ -7,10 +7,6 @@ You might already be working on someone elses code so plase start correct bad na
 Most important you might be helping future yourself who will be reading five years old code you have written.
 
 
-<div align="center" class="imgDiv">
-    <img src="images\joke.jpg" width="400px">
-</div>
-
 <div style="page-break-after: always;"></div>
 
 
@@ -381,9 +377,7 @@ Same as Field
 - Avoid using single characters for the loops. Try to extend index names with an appropriate suffix. ( For ex. colIndex, customerIndex)
 - Avoid enumeration variable names like number1, number2
 
-<div align="center" class="imgDiv">
-<img src="images\variable_names.jpg" width="400px">
-</div>
+
 <div style="page-break-after: always;"></div>
 
 ### Parameters
