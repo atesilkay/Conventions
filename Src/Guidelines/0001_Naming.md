@@ -323,6 +323,7 @@ Following are naming advices for specific elements.
 - Use singular names for enums.
 - Use plural name for bit fields.
 - Don’t prefix (or suffix) enum type or enum values
+- Don't use names like `FirstValue`, `LastValue`
 
 <div style="page-break-after: always;"></div>
 

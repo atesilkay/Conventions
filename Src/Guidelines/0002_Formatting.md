@@ -1252,6 +1252,42 @@ public class TypeName
 
 <div style="page-break-after: always;"></div>
 
+##Enums
+
+* Enums values should go their own line. [RULE yazılacak]
+
+
+<div markdown="1" class="divTableCellO">
+<div class="divTable">
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCell">
+```cs        
+enum Color
+{
+    Red,Greed,Blue
+}
+```
+</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCell">
+```cs     
+enum Color
+{
+    Red,
+    Greed,
+    Blue
+}
+```
+</div>
+</div>
+</div>
+</div>
+</div> 
+
 ## Region
 
 * Separate interface implementation by using regions. (For example separate IDisposable implementations with a region)
