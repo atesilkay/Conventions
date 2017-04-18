@@ -67,8 +67,9 @@ task BuildHtml {
 			Remove-Item $outfilePdf
 		}
 
-		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks+pandoc_title_block FintekCodingGuidelines.md -o $outfile --self-contained
-		& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8" 
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks+pandoc_title_block FintekCodingGuidelines.md -o $outfile --self-contained		
+		#& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" -V geometry:margin=.1in $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8" 
+		& "$LibDir\Pandoc\wkhtmltopdf.exe" --page-size A4 --disable-smart-shrinking --footer-left "Trial" --footer-right "Coding Conventions" --footer-font-size 8 --footer-line  --margin-top 0 --margin-left 0 --margin-right 0 --margin-bottom 0  $outfile $outfilePdf
 
 	}
 	finally

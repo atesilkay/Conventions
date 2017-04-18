@@ -3,3 +3,6 @@
 /.vs/slnx.sqlite
 /.vs/Conventions/v15/*.suo
 /.vs/config/applicationhost.config
+/.vs/VSWorkspaceState.json
+/Lib/Pandoc/footer_template.tex
+/Lib/Pandoc/manual.tex
