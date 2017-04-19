@@ -579,3 +579,37 @@ ul + div.divTableCellO {
 div.divTableCellO {
     page-break-inside: avoid;
 }
+
+.headerimg {
+    position: relative;
+    z-index: 1;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    width: 100%;
+}
+
+.footerpage {
+    position: absolute;
+    z-index: 3;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Variable Bold, Calibri, Arial;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    width: 98%;
+}
+
+.footernote {
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    padding-right : 10px;
+    font-family: Variable Bold, Calibri, Arial;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    text-align: right;
+    width: 100%;
+}

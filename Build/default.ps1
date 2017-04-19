@@ -5,7 +5,7 @@
 	$SrcDir = "$BaseDirectory\Src\"
 }
 
-task default -depends Clean,  Compile, CoverCompile, BuildHtml
+task default -depends Clean,  Compile,FooterCompile, HeaderCompile,CoverCompile, BuildHtml
 
 task Clean {	
 	if (Test-Path $ArtifactsDirectory) {
@@ -61,6 +61,37 @@ task CoverCompile {
 	}
 }
 
+task FooterCompile {
+	$files = (dir $SrcDir\Guidelines\Footer.md)
+
+	if (!(Test-Path -Path "$ArtifactsDirectory\Guidelines")) {
+		New-Item -ItemType Directory -Force -Path "$ArtifactsDirectory\Guidelines"
+	}
+
+	$outfile = "$ArtifactsDirectory\Guidelines\Footer.md"
+		
+	$files | %{
+		Write-Host "Including " $_.FullName
+		(Get-Content $_.FullName).replace('%semver%', $script:Semver).replace('%commitdate%', $script:CommitDate) |  Add-Content $outfile
+	}
+}
+
+task HeaderCompile {
+	$files = (dir $SrcDir\Guidelines\Header.md)
+
+	if (!(Test-Path -Path "$ArtifactsDirectory\Guidelines")) {
+		New-Item -ItemType Directory -Force -Path "$ArtifactsDirectory\Guidelines"
+	}
+
+	$outfile = "$ArtifactsDirectory\Guidelines\Header.md"
+		
+	$files | %{
+		Write-Host "Including " $_.FullName
+		(Get-Content $_.FullName).replace('%semver%', $script:Semver).replace('%commitdate%', $script:CommitDate) |  Add-Content $outfile
+	}
+}
+
+
 
 
 
@@ -72,6 +103,8 @@ task BuildHtml {
 	{
 		Set-Location "$ArtifactsDirectory\Guidelines"
 
+		$footerfile = "$ArtifactsDirectory\Footer.html"
+		$headerfile = "$ArtifactsDirectory\Header.html"
 		$coverfile = "$ArtifactsDirectory\Cover.html"
 		$outfile = "$ArtifactsDirectory\Rules.html"
 		$outfilePdf = "$ArtifactsDirectory\Rules.pdf"
@@ -87,13 +120,15 @@ task BuildHtml {
 			Remove-Item $outfilePdf
 		}
 
-		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html Cover.md -o $coverfile --self-contained		
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html Cover.md -o $coverfile --self-contained	
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html Footer.md -o $footerfile --self-contained
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html Header.md -o $headerfile --self-contained
 		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+backtick_code_blocks FintekCodingGuidelines.md -o $outfile --self-contained		
 		
 		#& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" -V geometry:margin=.1in $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8" 
 		
 		& "$LibDir\Pandoc\wkhtmltopdf.exe" --page-size A4 --disable-smart-shrinking --footer-font-size 8 --margin-top 0 --margin-left 0 --margin-right 0 --margin-bottom 0  $coverfile $coverfilePdf
-		& "$LibDir\Pandoc\wkhtmltopdf.exe" --page-size A4 --disable-smart-shrinking --footer-left "Trial" --footer-right "Coding Conventions" --footer-font-size 8 --margin-top 1in --margin-left 1in --margin-right 1in --margin-bottom 1in  $outfile $outfilePdf
+		& "$LibDir\Pandoc\wkhtmltopdf.exe" --page-size A4 --disable-smart-shrinking --footer-font-size 8 --footer-html $footerfile --header-html $headerfile --margin-top 1in --margin-left 1in --margin-right 1in --margin-bottom 1in $outfile $outfilePdf
 
 		& "$LibDir\gs\bin\gswin64.exe" -dBATCH -dNOPAUSE -dQUIET -dNOPAGEPROMPT -q -sDEVICE=pdfwrite -sOutputFile="$combinedPdf" "$coverfilePdf" "$outfilePdf"
 
