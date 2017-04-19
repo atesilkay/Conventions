@@ -43,32 +43,31 @@ For ordering these rules may be applied <span class="spanny">[[SA1200 - SA1217](
 * Don’t use tabs for indentation. Check if your VS IDE set properly <span id="SA1027_" class="spanny">[[SA1027](#spacing-rules)]</span>
 * Recursively indent all code blocks contained within braces
 * Don’t indent object initializers.
-
 <div markdown="1" class="divTableCellO">
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 var customer = new Customer()
-                {
-                    Age = 1,
-                    Name = "Barış",
-                    Surname = "Akan"
-                };
+            {
+                Age = 1,
+                Name = "Baris",
+                Surname = "Akan"
+            };
 ```
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
-<div class="divTableCell">
+<div class="divTableCellT">TRUE</div>
+<div class="divTableCell">           
 ```cs     
 var customer = new Customer()
 {
-    Age = 1,
-    Name = "Barış",
-    Surname = "Akan"
+Age = 1,
+Name = "Baris",
+Surname = "Akan"
 };
 ```
 </div>
@@ -76,8 +75,6 @@ var customer = new Customer()
 </div>
 </div>
 </div>
-
-
 * Don’t indent lambda expressions. Treat as object initializers.
 
 
@@ -94,7 +91,7 @@ var customer = new Customer()
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     var = a * b / (c - g +
@@ -117,7 +114,7 @@ var customer = new Customer()
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if(true != false)
@@ -128,7 +125,7 @@ if(true != false)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 if (true != false)
@@ -149,7 +146,7 @@ if (true != false)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public void Spacing(string name,string surname)
@@ -159,7 +156,7 @@ public void Spacing(string name,string surname)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public void Spacing(string name, string surname)
@@ -173,13 +170,13 @@ public void Spacing(string name, string surname)
 </div>
 
 
-* There is no space before or after parenthesis **()** <span id="SA1008_9_" class="spanny">[[SA1008 - SA1009](#spacing-rules)]</span>
+* There is no space before or after parenthesis **()** <span id="SA1008_9_" class="spanny" markdown="1">[[SA1008 - SA1009](#spacing-rules)]</span>
 
 <div markdown="1" class="divTableCellO">
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if ( ( true != false ) &  ( false == true ) )
@@ -190,7 +187,7 @@ if ( ( true != false ) &  ( false == true ) )
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 if ((true != false) & (false == true))
@@ -209,7 +206,7 @@ if ((true != false) & (false == true))
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 Int [ 10 ]  integers = new int [ 10 ] ;
@@ -217,7 +214,7 @@ Int [ 10 ]  integers = new int [ 10 ] ;
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 int[10] integers = new int[10];
@@ -234,7 +231,7 @@ int[10] integers = new int[10];
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 [ Serializable ]
@@ -245,7 +242,7 @@ public class Customer : ICustomer
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 [Serializable]
@@ -266,7 +263,7 @@ public class Customer : ICustomer
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 List< int > amounts = new List< int >();
@@ -274,7 +271,7 @@ List< int > amounts = new List< int >();
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 List<int> amounts = new List<int>();
@@ -292,7 +289,7 @@ List<int> amounts = new List<int>();
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public bool EmtyMethod()
@@ -303,7 +300,7 @@ public bool EmtyMethod()
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public bool EmtyMethod()
@@ -324,7 +321,7 @@ public bool EmtyMethod()
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 private int ? maximumValue;
@@ -337,7 +334,7 @@ public int CalculateMax(int ? currentValue)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 private int? maximumValue;
@@ -358,7 +355,7 @@ public int CalculateMax(int? currentValue)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 Customer customer = new Customer();
@@ -367,7 +364,7 @@ customer . CalculateMax();
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 Customer customer = new Customer();
@@ -386,7 +383,7 @@ customer.CalculateMax();
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 int yearsToAdd = 1;
@@ -396,7 +393,7 @@ yearsToAdd --;
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 int yearsToAdd = 1;
@@ -416,7 +413,7 @@ yearsToAdd--;
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 int maxTotal = - 500;
@@ -425,7 +422,7 @@ int minTotal = + 500;
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 int yearsToAdd = 1;
@@ -445,7 +442,7 @@ int minTotal = +500;
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public class Class2<T>:Class1 where T:string
@@ -458,7 +455,7 @@ public class Class2<T>:Class1 where T:string
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public class Class2<T> : Class1 where T : string
@@ -483,7 +480,7 @@ public class Class2<T> : Class1 where T : string
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 int yearsToAdd=1;
@@ -495,7 +492,7 @@ bool why=! false;
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 int yearsToAdd = 1;
@@ -527,7 +524,7 @@ Allman style will be applied for all the brackets.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public string GetName(){  
@@ -537,7 +534,7 @@ public string GetName(){
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public string GetName()
@@ -558,7 +555,7 @@ public string GetName()
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if (canHold) { var k = 255; }
@@ -566,7 +563,7 @@ if (canHold) { var k = 255; }
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 if (canHold)
@@ -590,7 +587,7 @@ if (canHold)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public abstract int Age
@@ -601,7 +598,7 @@ public abstract int Age
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public abstract int Age { get; set; }
@@ -620,7 +617,7 @@ public abstract int Age { get; set; }
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public int Age
@@ -631,7 +628,7 @@ public int Age
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public int Age { get; set; }
@@ -651,7 +648,7 @@ public int Age { get; set; }
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public bool Enabled
@@ -667,7 +664,7 @@ public bool Enabled
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public bool Enabled
@@ -704,7 +701,7 @@ public bool Enabled
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public int GetAge() { return Age; }
@@ -712,7 +709,7 @@ public int GetAge() { return Age; }
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public int GetAge()
@@ -735,7 +732,7 @@ public int GetAge()
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public string JoinName(
@@ -747,7 +744,7 @@ public string JoinName(
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public string JoinName(string first, string last)
@@ -770,7 +767,7 @@ public string JoinName(string first, string last)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     public string JoinName(string first
@@ -781,7 +778,7 @@ public string JoinName(string first, string last)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
     public string JoinName(string first, string last)
@@ -814,7 +811,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     public void Method1()
@@ -838,7 +835,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     public bool Enabled
@@ -867,7 +864,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     public bool Enabled
@@ -893,7 +890,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     public bool Enabled
@@ -922,7 +919,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     public bool Enabled
@@ -945,7 +942,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     try
@@ -970,7 +967,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     do
@@ -998,7 +995,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     return CalculatePoint
@@ -1007,7 +1004,7 @@ Empty/blank lines are helping to improve readability of the document.
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
     return CalculatePoint(10,20);
@@ -1026,7 +1023,7 @@ Empty/blank lines are helping to improve readability of the document.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 return CalculatePoint(10,20
@@ -1035,7 +1032,7 @@ return CalculatePoint(10,20
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 return CalculatePoint(10,20);
@@ -1053,7 +1050,7 @@ return CalculatePoint(10,20);
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 var x = this.CalculatePoint(
@@ -1062,7 +1059,7 @@ var x = this.CalculatePoint(
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 var x = this.CalculatePoint();
@@ -1083,7 +1080,7 @@ var x = this.CalculatePoint();
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
     int a,b,c;
@@ -1148,7 +1145,7 @@ if (x != y)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if (true)
@@ -1157,7 +1154,7 @@ if (true)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 if (true)
@@ -1181,7 +1178,7 @@ if (true)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 private void Method<T, R>() where T : class where R : class, new()
@@ -1191,7 +1188,7 @@ private void Method<T, R>() where T : class where R : class, new()
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 private void Method<T, R>()
@@ -1213,7 +1210,7 @@ private void Method<T, R>()
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public class TypeName
@@ -1230,7 +1227,7 @@ public class TypeName
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public class TypeName
@@ -1261,7 +1258,7 @@ public class TypeName
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 enum Color
@@ -1272,7 +1269,7 @@ enum Color
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 enum Color
@@ -1310,7 +1307,7 @@ enum Color
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 [Attrbute1, Attrbute2, Attrbute3]
@@ -1320,7 +1317,7 @@ public class MyClass
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 [Attrbute1, RelatedAttribute2]

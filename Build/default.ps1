@@ -87,8 +87,8 @@ task BuildHtml {
 			Remove-Item $outfilePdf
 		}
 
-		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks+pandoc_title_block Cover.md -o $coverfile --self-contained		
-		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks+pandoc_title_block FintekCodingGuidelines.md -o $outfile --self-contained		
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html Cover.md -o $coverfile --self-contained		
+		& "$LibDir\Pandoc\pandoc.exe"  -f markdown_phpextra+raw_html+backtick_code_blocks FintekCodingGuidelines.md -o $outfile --self-contained		
 		
 		#& "$LibDir\Pandoc\pandoc.exe"  -f html -t html5 --css "$SrcDir\Guidelines\style.css" -V geometry:margin=.1in $outfile -o $outfilePdf --latex-engine=xelatex --variable mainfont="utf8" 
 		

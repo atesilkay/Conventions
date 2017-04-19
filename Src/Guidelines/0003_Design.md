@@ -263,7 +263,7 @@ If you forget to compiled TypeB you'll have major problems.
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 public class Point
@@ -277,7 +277,7 @@ public class Point
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 public class Point
@@ -306,7 +306,7 @@ public class Point
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 TypeA Parse(string json);
@@ -316,7 +316,7 @@ TypeA ParseFromStream(Stram stream);
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs          
 TypeA Parse(string json);
@@ -391,7 +391,7 @@ TypeA Parse(Stram stream);
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 string str = string.Empty;
@@ -403,7 +403,7 @@ for (int i = 0; i < 10; i++)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 StringBuilder sb = new StringBuilder();
@@ -427,7 +427,7 @@ normalize strings for comparison. <span id="SA1133_" class="spanny">[[CA1308](#)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 int id = -1;
@@ -443,7 +443,7 @@ for(int i=0; i < developerList.Count; i++)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 int id = -1;
@@ -501,7 +501,7 @@ Don't change loop variable within loop
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if(valid == true)
@@ -509,7 +509,7 @@ if(valid == true)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 if(valid)
@@ -526,7 +526,7 @@ if(valid)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if((i=5) > dayOfTheWeek)
@@ -543,7 +543,7 @@ if((i=5) > dayOfTheWeek)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 if (((value > _minValue) && (value != _maxValue)) && (value < _maxValue))
@@ -552,7 +552,7 @@ if (((value > _minValue) && (value != _maxValue)) && (value < _maxValue))
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 isHigherThanMin = (value > _minValue);
@@ -573,7 +573,7 @@ isInValueRange =  isHigherThanMin & dontEqualMax & isSmallMax
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 bool eligible = false;
@@ -589,7 +589,7 @@ else
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs     
 bool eligible = (value > 10);
@@ -629,7 +629,7 @@ catch (Exception ex)
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannyfalse">FALSE</span></div>
+<div class="divTableCellF">FALSE</div>
 <div class="divTableCell">
 ```cs        
 try
@@ -644,7 +644,7 @@ catch (Exception ex)
 </div>
 </div>
 <div class="divTableRow">
-<div class="divTableCellF"><span class="spannytrue">TRUE</span></div>
+<div class="divTableCellT">TRUE</div>
 <div class="divTableCell">
 ```cs          
 try

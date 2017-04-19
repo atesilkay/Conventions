@@ -7,7 +7,7 @@ Following are the main projects which can be used for analysis.
 
 Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
 
-### Spacing Rules
+### Spacing Rules {#spacing-rules}
 
 | Identifier | Enabled                      | Name                                                                    |
 |------------|---------------------------   |-------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 
 <div style="page-break-after: always;"></div>
 
-### Ordering Rules
+### Ordering Rules {#ordering-rules}
 
 | Identifier | Enabled                  | Name                                                                |
 |------------|---------                 |---------------------------------------------------------------------|
@@ -71,7 +71,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 
 <div style="page-break-after: always;"></div>
 
-### Layout Rules
+### Layout Rules {#layout-rules}
 
 | Identifier | Enabled                  | Name                                                    |
 |------------|---------                 |---------------------------------------------------------|
@@ -99,7 +99,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 
 <div style="page-break-after: always;"></div>
 
-### Naming Rules
+### Naming Rules {#naming-rules}
 
 | Identifier | Enabled              | Name                                                 |
 |------------|---------             |------------------------------------------------------|
@@ -121,7 +121,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 
 <div style="page-break-after: always;"></div>
 
-### Maintainability Rules
+### Maintainability Rules {#maintainability-rules}
 
 
 | Identifier | Enabled          | Name                                                 |
@@ -144,7 +144,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 
 <div style="page-break-after: always;"></div>
 
-### Readability Rules
+### Readability Rules {#Readability-rules}
 
 
 | Identifier | Enabled | Name                                                    |
