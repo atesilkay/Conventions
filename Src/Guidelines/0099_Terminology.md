@@ -38,3 +38,5 @@
     <td class="tg-yw4l">strName, strSurname, strProfession</td>
   </tr>
 </table>
+
+<div style="page-break-after: always;"></div>

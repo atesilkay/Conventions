@@ -11,7 +11,7 @@ Some of them can be controlled via static analyzer tools but some of them needs 
 * Declare constant rather than `0`,`1`, `false`, `null`etc.
 * Don't pass boolean parameters. Make them constant instead.
 
-<div style="page-break-after: always;"></div>
+
 
 ## Readonly vs constant
 
@@ -26,7 +26,7 @@ At some point Diameter value changed and TypeA compiled but TypeB is not compile
 In this case TypeB will contain old value of diameter.
 If you forget to compiled TypeB you'll have major problems.
 
-    ```cs
+```cs
     namespace AssemblyA
     {
         public class TypeA
@@ -45,9 +45,7 @@ If you forget to compiled TypeB you'll have major problems.
             }        
         }
     }
-    ```
-
-<div style="page-break-after: always;"></div>
+```
 
 ## Static 
 
@@ -69,7 +67,6 @@ If you forget to compiled TypeB you'll have major problems.
 * Try to initialize variables as they are declared.
 
 
-<div style="page-break-after: always;"></div>
 
 ## Class
 
@@ -86,7 +83,7 @@ If you forget to compiled TypeB you'll have major problems.
             Name = "Fluffy" 
         };
     ```
-<div style="page-break-after: always;"></div>
+
 
 ### Constructor
 
@@ -110,7 +107,7 @@ If you forget to compiled TypeB you'll have major problems.
         public void Connect();    
     }
     ```
-<div style="page-break-after: always;"></div>
+
 
 ### new & base & virtual
 
@@ -148,7 +145,6 @@ If you forget to compiled TypeB you'll have major problems.
 
     ```
 
-<div style="page-break-after: always;"></div>
 
 * Only use the “base” keyword when invoking a base class constructor or base implementation within an override.
 
@@ -204,7 +200,7 @@ If you forget to compiled TypeB you'll have major problems.
         Console.WriteLine(sm.MultiplyByTwo(2)); // prints 4
     }
     ```
-<div style="page-break-after: always;"></div>
+
 
 * Do not call virtual members on an object inside its constructors. 
 
@@ -257,7 +253,7 @@ If you forget to compiled TypeB you'll have major problems.
         }    
     }
     ```
-<div style="page-break-after: always;"></div>
+
 
 ### Method
 
@@ -337,7 +333,7 @@ TypeA Parse(Stram stream);
 * Methods should not take boolean parameters. This indicates they are doing more than one job.
 * try to avoid ref / out parameters
 
-<div style="page-break-after: always;"></div>
+
 
 ### Properties
 
@@ -371,7 +367,7 @@ TypeA Parse(Stram stream);
     }
     ```
 
-<div style="page-break-after: always;"></div>
+
 
 ## Enums
 
@@ -382,7 +378,7 @@ TypeA Parse(Stram stream);
 * Don't assign values explicitly to enumerations unless you want to enforce specific value.
 * The first value in an enumeration is the default; make sure that the most appropriate simple enumeration value is listed first.
 
-<div style="page-break-after: always;"></div>
+
 
 ## Strings
 
@@ -486,7 +482,7 @@ for(int i=0; i < developerList.Count; i++)
   
 * Avoid methods when defining struct
 
-<div style="page-break-after: always;"></div>
+
 
 ## Statements
 ### Switch
@@ -605,7 +601,7 @@ bool eligible = (value > 10);
 </div>  
 
 
-<div style="page-break-after: always;"></div>
+
 
 ## Exceptions
 * Always try to catch specific exceptions. Try to be as specific as possible.
@@ -756,7 +752,7 @@ finally
 * If exception will travel accross application boundaries than it should be serializable
 
 
-<div style="page-break-after: always;"></div>
+
 
 ## Cleanup
 
@@ -795,3 +791,5 @@ public void Dispose()
 * Direct casts -> as
 * use var only type is obvious.
 * Don't use magic numbers
+
+<div style="page-break-after: always;"></div>

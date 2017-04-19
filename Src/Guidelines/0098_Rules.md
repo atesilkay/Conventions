@@ -39,7 +39,9 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 | SA1025     | [YES](#SA1025_28_)          | CodeMustNotContainMultipleWhitespaceInARow                              |
 | SA1026     |                              | CodeMustNotContainSpaceAfterNew KeywordInImplicitlyTypedArrayAllocation |
 | SA1027     | [YES](#SA1027_)             | UseTabsCorrectly                                                        |
-| SA1028     | [YES](#SA1025_28_)          | CodeMustNotContainTrailingWhitespace                                    |
+| SA1028     | [YES](#SA1025_28_)          | CodeMustNotContainTrailingWhitespace     
+
+
 <div style="page-break-after: always;"></div>
 
 ### Ordering Rules
@@ -95,7 +97,6 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 | SA1519     |                          | BracesMustNotBeOmittedFromMultiLineChildStatement       |
 | SA1520     |                          | UseBracesConsistently                                   |
 
-
 <div style="page-break-after: always;"></div>
 
 ### Naming Rules
@@ -122,6 +123,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 
 ### Maintainability Rules
 
+
 | Identifier | Enabled          | Name                                                 |
 |------------|---------         |------------------------------------------------------|
 | SA1119     |[YES](#SA1119_)   | StatementMustNotUseUnnecessaryParenthesis            |
@@ -143,6 +145,7 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 <div style="page-break-after: always;"></div>
 
 ### Readability Rules
+
 
 | Identifier | Enabled | Name                                                    |
 |------------|---------|---------------------------------------------------------|
@@ -182,3 +185,5 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 | SA1134     |         | AttributesMustNotShareLine                              |
 | SA1136     |         | EnumValuesShouldBeOnSeparateLines                       |
 | SA1139     |         | UseLiteralsSuffixNotationInsteadOfCasting               |
+
+<div style="page-break-after: always;"></div>

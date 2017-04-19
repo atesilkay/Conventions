@@ -6,11 +6,6 @@ Each line of code you write will be read by someone else in the future so help t
 You might already be working on someone elses code so plase start correct bad namings as you struggle to understand the code. 
 Most important you might be helping future yourself who will be reading five years old code you have written.
 
-
-<div style="page-break-after: always;"></div>
-
-
-
 ### Language Perspective
 
 Code is read so names should not be disconnected from the language
@@ -26,7 +21,7 @@ Code is read so names should not be disconnected from the language
     MetaData -> Metadata
     SurName -> Surname
 ```
-<div style="page-break-after: always;"></div>
+
 
 ### Character Limitations
 
@@ -52,7 +47,7 @@ public string conditionsé
 
 (***) In a sorting routine that accepts two elements; in that case, “value1” and “value2” are appropriate
 
-<div style="page-break-after: always;"></div>
+
 
 ### Structural Perspective
 
@@ -79,7 +74,7 @@ public string conditionsé
     class Customer(...)
     class CustomeR(...)
     ```
-<div style="page-break-after: always;"></div>
+
 
 ### Environmental Perspective
 
@@ -91,7 +86,8 @@ public string conditionsé
 
 ### Capitalization Summary
 
-<table class="tg">
+<div markup="1" align="center">
+<table class="tg" style="align:center;width:250px;">
 <tr>
 <th class="tg-yw4l">Term</th>
 <th class="tg-yw4l">Meaning</th>
@@ -113,7 +109,9 @@ public string conditionsé
 <td class="tg-yw4l">Not Applicable</td>
 </tr>
 </table> 
-<table class="tg">
+</div>
+
+<table class="tg" style="width:100%;">
 <tr>
 <th class="tg-yw4l">Identifier</th>
 <th class="tg-yw4l">Public</th>
@@ -283,6 +281,8 @@ public string conditionsé
 <td class="tg-yw4l"></td>
 </tr>
 </table>
+
+
 <div style="page-break-after: always;"></div>
 
 ## Naming Guidelines
@@ -325,7 +325,7 @@ Following are naming advices for specific elements.
 - Don’t prefix (or suffix) enum type or enum values
 - Don't use names like `FirstValue`, `LastValue`
 
-<div style="page-break-after: always;"></div>
+
 
 ### Method
 
@@ -338,7 +338,7 @@ Following are naming advices for specific elements.
 - Extension Methods should be put in a class with Extensions suffix.
 - Methods with return values should have a name describing the value returned.
 
-<div style="page-break-after: always;"></div>
+
 
 ### Property
 
@@ -368,7 +368,7 @@ Same as Field
 
 Same as Field
 
-<div style="page-break-after: always;"></div>
+
 
 ### Variables
 
@@ -379,7 +379,7 @@ Same as Field
 - Avoid enumeration variable names like number1, number2
 
 
-<div style="page-break-after: always;"></div>
+
 
 ### Parameters
 
@@ -439,3 +439,5 @@ Same as Field
 *(7) If it is two letters it should be used UPPERCASE*
 
 *(8) If it is at the beginning to camel-case identifier, it is always small*
+
+<div style="page-break-after: always;"></div>

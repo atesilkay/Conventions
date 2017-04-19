@@ -1,5 +1,6 @@
-# About
+<link href="style.css" type="text/css" rel="stylesheet"></link>
 
+# About
 
 ## Document Layout
 
@@ -17,3 +18,5 @@ This section is mainly about layout of the source code. It provides rules and ad
 ### Design
 
 This section containts various rules and advices about anything. ,It's a kind of best practices section. Unlike naming and formatting rules these are mostly related about performance, maintenance, quality. 
+
+<div style="page-break-after: always;"></div>

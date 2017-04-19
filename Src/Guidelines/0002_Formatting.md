@@ -28,7 +28,7 @@
     5. private
 
 For ordering these rules may be applied <span class="spanny">[[SA1200 - SA1217](#ordering-rules)]</span>
-<div style="page-break-after: always;"></div>
+
 
 ## Namespaces
 
@@ -36,7 +36,7 @@ For ordering these rules may be applied <span class="spanny">[[SA1200 - SA1217](
 * Never put using statement within namespace scope.
 * It is a good practice to group namespaces according to company or logical groups.
 
-<div style="page-break-after: always;"></div>
+
 
 ## Indentation
 
@@ -80,7 +80,7 @@ var customer = new Customer()
 
 * Don’t indent lambda expressions. Treat as object initializers.
 
-<div style="page-break-after: always;"></div>
+
 
 ## Line Breaking
 
@@ -107,7 +107,7 @@ var customer = new Customer()
 </div>
 
 
-<div style="page-break-after: always;"></div>
+
 
 ## Spacing
 
@@ -288,7 +288,6 @@ List<int> amounts = new List<int>();
 
 * There is no space before or after for generic brackets **{}** <span id="SA1012_13_" class="spanny">[[SA1012 - SA1013](#spacing-rules)]</span>
 
-
 <div markdown="1" class="divTableCellO">
 <div class="divTable">
 <div class="divTableBody">
@@ -316,8 +315,7 @@ public bool EmtyMethod()
 </div>
 </div>
 </div>
-</div>   
-  
+</div>
 
 * Nullable type symbol should not be preceded by space **?** <span id="SA1018_" class="spanny">[[SA1018](#spacing-rules)]</span>
 
@@ -515,11 +513,13 @@ bool why = !false;
 
 * Postfix notations there is no space between operator and argument. <span id="SA1003_" class="spanny">[[SA1003](#spacing-rules)]</span>
 
-<div style="page-break-after: always;"></div>
 
-## Brackets / Braces
+
+## Brackets
 
 Allman style will be applied for all the brackets.
+
+### Common
 
 * Curly brackets go on their own line in most cases. <span id="SA1500_" class="spanny">[[SA1500](#layout-rules)]</span>
 
@@ -580,9 +580,9 @@ if (canHold)
 </div>
 </div>    
       
-<div style="page-break-after: always;"></div>
 
-### Properties
+
+### Property Brackets
 
 * Abstract properties goes into a single line with brackets
 
@@ -696,7 +696,7 @@ public bool Enabled
 </div>  
 
 
-### Methods
+### Method Brackets
 
 * All method declaration brackets should go their own lines. This actually applies to all elements using brackets. <span id="SA1502_" class="spanny">[[SA1502](#layout-rules)]</span>
     
@@ -789,7 +789,6 @@ public string JoinName(string first, string last)
     }
     
     //OR
-
     public string JoinName(,
         string first,
         string last)
@@ -802,11 +801,12 @@ public string JoinName(string first, string last)
 </div>
 </div>  
 
-<div style="page-break-after: always;"></div>
 
 ## Empty Lines
 
 Empty/blank lines are helping to improve readability of the document. 
+
+### Common
 
 * Elements should be separated by single black line. <span id="SA1516_" class="spanny">[[SA1516](#layout-rules)]</span>
 
@@ -914,7 +914,7 @@ Empty/blank lines are helping to improve readability of the document.
 
 * Source file should not contain blank lines at the beginning or at the end. <span id="SA1517_18_" class="spanny">[[SA1517 - SA1518](#layout-rules)]</span>
 
-### Statements
+### Statement Empty Lines
 
 * Closing brackets followed by blank line <span id="SA1513_" class="spanny">[[SA1513](#layout-rules)]</span>
 
@@ -986,7 +986,7 @@ Empty/blank lines are helping to improve readability of the document.
 </div>
 </div>  
 
-<div style="page-break-after: always;"></div>
+
 
 ## Parenthesis
 
@@ -1073,7 +1073,7 @@ var x = this.CalculatePoint();
 </div>
 </div>  
 
-<div style="page-break-after: always;"></div>
+
 
 ## Statements
 
@@ -1171,7 +1171,7 @@ if (true)
 </div>
 </div>  
 
-<div style="page-break-after: always;"></div>
+
 
 ## Class Definitions
 
@@ -1250,7 +1250,7 @@ public class TypeName
 </div>
 </div>  
 
-<div style="page-break-after: always;"></div>
+
 
 ##Enums
 
@@ -1299,7 +1299,7 @@ enum Color
 * If there is a nested class put it in a region (AV2407 kuralını incele)
 
 
-<div style="page-break-after: always;"></div>
+
 
 ## Attributes
 
@@ -1336,7 +1336,7 @@ public class MyClass
 </div>  
 
 
-<div style="page-break-after: always;"></div>
+
 
 ## Comments
 
@@ -1392,3 +1392,4 @@ public class MyClass
         /// </example>
 
     ```
+<div style="page-break-after: always;"></div>
