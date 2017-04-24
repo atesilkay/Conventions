@@ -187,3 +187,88 @@ Project URL : [DotNetAnalyzers/StyleCopAnalyzers](https://github.com/DotNetAnaly
 | SA1139     |         | UseLiteralsSuffixNotationInsteadOfCasting               |
 
 <div style="page-break-after: always;"></div>
+
+## CodeCrackers CSharp
+
+### Design
+
+
+| Identifier    | Enabled | Name                                                           |
+|---------------|---------|----------------------------------------------------------------|
+| CC0003        |[YES](#CC0003_)         | CatchEmptyAnalyzer                                             |
+| CC0004        |[YES](#CC0003_)         | EmptyCatchBlockAnalyzer                                        |
+| CC0016        |         | CopyEventToVariableBeforeFireAnalyzer                          |
+| CC0021        |         | NameOfAnalyzer                                                 |
+| CC0024        |[YES](#CC0003_)         | StaticConstructorExceptionAnalyzer                             |
+| CC0031        |         | UseInvokeMethodToFireEventAnalyzer                             |
+
+### Naming
+
+| Identifier    | Enabled | Name                                                           |
+|---------------|---------|----------------------------------------------------------------|
+| CC0012        |         | RethrowExceptionAnalyzer                                       |
+| CC0029        |         | DisposablesShouldCallSuppressFinalizeAnalyzer                  |
+
+### Performace
+
+| Identifier    | Enabled | Name                                                           |
+|---------------|---------|----------------------------------------------------------------|
+| CC0011        |[YES](#CC0003_)         | RemoveWhereWhenItIsPossibleAnalyzer                            |
+| CC0023        |         | SealedAttributeAnalyzer                                        |
+| CC0025        |[YES](#CC0003_)         | EmptyFinalizerAnalyzer                                         |
+| CC0030        |[YES](#CC0003_)       | MakeLocalVariableConstWhenItIsPossibleAnalyzer                 |
+| CC0039        |[YES](#CC0003_)      | StringBuilderInLoopAnalyzer                                    |
+
+
+### Style
+
+| Identifier    | Enabled | Name                                                           |
+|---------------|---------|----------------------------------------------------------------|
+| CC0001        |         | AlwaysUseVarAnalyzer                                           |
+| CC0005        |[YES](#CC0003_)         | EmptyObjectInitializerAnalyzer                                 |
+| CC0006        |         | ForInArrayAnalyzer                                             |
+| CC0008        |[YES](#CC0003_)         | ObjectInitializerAnalyzer (local declaration)                  |
+| CC0009        |[YES](#CC0003_)         | ObjectInitializerAnalyzer (assignment)                         |
+| CC0013        |         | TernaryOperatorAnalyzer (return)                               |
+| CC0014        |         | TernaryOperatorAnalyzer (assignment)                           |
+| CC0015        |[YES](#CC0003_)         | UnnecessaryParenthesisAnalyzer                                 |
+| CC0017        |[YES](#CC0003_)         | SwitchToAutoPropAnalyzer                                       |
+| CC0018        |         | ExistenceOperatorAnalyzer                                      |
+| CC0019        |         | ConvertToSwitchAnalyzer                                        |
+| CC0020        |         | ConvertLambdaExpressionToMethodGroupAnalyzer                   |
+| CC0037        |         | RemoveCommentedCodeAnalyzer                                    |
+| CC0038        |         | ConvertToExpressionBodiedMemberAnalyzer                        |
+| CC0048        |         | StringFormatAnalyzer                                           |
+
+### Usage
+
+| Identifier    | Enabled | Name                                                           |
+|---------------|---------|----------------------------------------------------------------|
+| CC0002        |[YES](#CC0003_)         | ArgumentExceptionAnalyzer                                      |
+| CC0007        |         | IfReturnTrueAnalyzer                                           |
+| CC0010        |[YES](#CC0003_)         | RegexAnalyzer                                                  |
+| CC0022        |[YES](#CC0003_)         | DisposableVariableNotDisposedAnalyzer                          |
+| CC0026        |         | CallExtensionMethodAsExtensionAnalyzer                         |
+| CC0032        |[YES](#CC0003_)         | DisposableFieldNotDisposedAnalyzer (Info - method call)        |
+| CC0033        |[YES](#CC0003_)         | DisposableFieldNotDisposedAnalyzer (Warning - object creation) |
+| CC0034        |         | RedundantFieldAssignmentAnalyzer                               |
+| CC0049        |[YES](#CC0003_)        | SimplifyRedundantBooleanComparisonsAnalyzer                    |
+| CC0052        |[YES](#CC0003_)         | ReadonlyFieldAnalyzer                                          |
+| CC0057        |[YES](#CC0003_)         | UnusedParametersAnalyzer                                       |
+| CC0068        |[YES](#CC0003_)         | RemovePrivateMethodNeverUsedAnalyzer                           |
+| CC0089        |[YES](#CC0003_)         | RemoveRedundantElseClauseAnalyzer                              |
+
+### Refactoring
+
+| Identifier    | Enabled | Name                                                           |
+|---------------|---------|----------------------------------------------------------------|
+| CC0042        |         | InvertForAnalyzer                                              |
+| CC0043        |         | ChangeAnyToAllAnalyzer                                         |
+| CC0045        |[YES](#CC0003_)         | StringRepresentationAnalyzer                                   |
+| CC0046        |         | StringRepresentationAnalyzer                                   |
+| CC0073        |[YES](#CC0003_)         | AddBracesToSwitchSectionsAnalyzer                              |
+| CC0082        |         | ComputeExpressionAnalyzer                                      |
+
+
+
+

@@ -359,6 +359,7 @@ Following are naming advices for specific elements.
 
 - Don’t use non-private fields. Use properties instead.
 - Since all fields should be private they should all start with “_” prefix (RULE yazılacak)
+**(SX1309 SX 1309S)**
 
 ### Static Field
 

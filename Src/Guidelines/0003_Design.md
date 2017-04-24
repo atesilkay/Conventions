@@ -662,6 +662,7 @@ catch (Exception ex)
 </div>
 </div>  
 
+**(CC0003 - CC0004)**
 
 * Empty catch block is like a black hole. Never use unless you have a really really good requirement
 
